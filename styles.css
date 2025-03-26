@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #f0f2f5;
+    background: #ff6700;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,19 +17,20 @@ body {
 .container {
     width: 100%;
     max-width: 400px;
-    padding: 20px;
-}
+    padding: 20px;}
 
 .auth-box {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
-
+.auth-box:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
 h2 {
     text-align: center;
-    margin-bottom: 20px;
     color: #1a73e8;
 }
 
@@ -44,7 +45,6 @@ input {
     border-radius: 5px;
     font-size: 16px;
 }
-
 input:focus {
     outline: none;
     border-color: #1a73e8;
@@ -107,3 +107,115 @@ a:hover {
     border-radius: 5px;
     border: 1px solid #eee;
 }
+
+
+
+.btn {
+    padding: 1.1em 1.5em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+   }
+   
+   .btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ff6700;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+   }
+   
+   .btn:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+   }
+   
+   .btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+   }
+   
+   .btn:active {
+    transform: scale(0.9);
+   }
+
+
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #183153;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .loginbtn:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #ffd401;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+  }
+  
+  button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  
+  button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover span {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(0.95);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+  .optext{
+    color: green
+  }
