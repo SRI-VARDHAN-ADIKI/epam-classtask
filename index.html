@@ -18,13 +18,18 @@
                 <div class="form-group">
                     <input type="password" id="loginPassword" placeholder="Password" required>
                 </div>
-                <button type="submit">Login</button>
+                <!-- <button type="submit">Login</button> -->
+                 <!-- From Uiverse.io by abrahamcalsin --> 
+<button class="loginbtn">
+    <span>Login</span>
+  </button>
+  
                 <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
             </form>
         </div>
 
-        <div class="auth-box" id="registerBox" style="display: none;">
-            <h2>Register</h2>
+        <div class="auth-box" id="registerBox" style="display: none; position: relative;;">
+            <h2 style = "padding-bottom:10px;"><u>Register</u></h2>
             <form id="registerForm">
                 <div class="form-group">
                     <input type="text" id="regUsername" placeholder="Username" required>
@@ -38,7 +43,9 @@
                 <div class="form-group">
                     <input type="password" id="regConfirmPassword" placeholder="Confirm Password" required>
                 </div>
-                <button type="submit">Register</button>
+                <!-- <button type="submit">Register</button> -->
+                 <!-- From Uiverse.io by Mike11jr --> 
+<button class="btn"> Register </button>
                 <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
             </form>
         </div>
@@ -46,11 +53,8 @@
         <div class="home-page" id="homePage" style="display: none;">
             <h2>Welcome, <span id="welcomeUsername"></span>!</h2>
             <div class="dashboard">
-                <p>This is your personal dashboard</p>
-                <div class="stats">
-                    <div class="stat-box">Last Login: <span id="lastLogin"></span></div>
-                    <div class="stat-box">Account Created: <span id="accountCreated"></span></div>
-                </div>
+                <p class="optext">This is your personal dashboard</p>
+                <p class="optext">his is home page</p>
             </div>
             <button id="logoutBtn">Logout</button>
         </div>
